@@ -1,0 +1,9 @@
+[build]
+builder = "dockerfile"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+
+[env]
+ASPNETCORE_ENVIRONMENT = "Production"
